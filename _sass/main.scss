@@ -34,6 +34,10 @@ $navbar-item-hover-background-color: #F5853F;
 
 @import "../node_modules/bulma/bulma.sass";
 
+.is-justify-content-end {
+  justify-content: flex-end !important;
+}
+
 .navbar {
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
@@ -92,6 +96,7 @@ $navbar-item-hover-background-color: #F5853F;
   }
 
   .client-showcase {  
+    margin-inline: auto;
     background: var(--image);
     background-position: 50% 50%;
     background-size: cover;
