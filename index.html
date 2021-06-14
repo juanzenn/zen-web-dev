@@ -1,640 +1,601 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zen - Desarrollo Web</title>
-    <script
-      src="https://kit.fontawesome.com/c8043db25f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <header>
-      <nav
-        class="navbar is-fixed-top"
-        role="navigation"
-        aria-label="main navigation"
-      >
-        <div class="navbar-brand">
-          <a class="navbar-item pl-4" href="index.html">
-            <div class="is-size-4 zen-logo"><span class="has-text-primary">Z</span>EN</div>
+
+<head>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zen - Desarrollo Web</title>
+  <script src="https://kit.fontawesome.com/c8043db25f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="index.html">
+          <div class="is-size-4 zen-logo"><span class="has-text-primary">Z</span>EN</div>
+        </a>
+
+        <!-- Hamburger button -->
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end pr-4">
+          <a class="navbar-item is-flex is-align-items-center" href="index.html">
+            <i class="icon fas fa-home mr-2"></i> Página Principal
           </a>
 
-          <!-- Hamburger button -->
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+          <a class="navbar-item is-flex is-align-items-center" href="servicios.html">
+            <i class="icon fas fa-building mr-2"></i> Servicios
+          </a>
+
+          <a class="navbar-item is-flex is-align-items-center" href="precios.html">
+            <i class="icon fas fa-file-invoice-dollar mr-2"></i> Precios
+          </a>
+
+          <a class="navbar-item is-flex is-align-items-center" href="contact.html">
+            <i class="icon fas fa-address-card mr-2"></i> Contacto
+          </a>
+
+          <a class="navbar-item is-flex is-align-items-center" href="why-web.html">
+            <i class="icon fas fa-question-circle mr-2"></i> ¿Por qué una web?
+          </a>
+
+          <a class="navbar-item is-flex is-align-items-center" href="proyectos.html">
+            <i class="icon fas fa-folder-open mr-2"></i> Proyectos
           </a>
         </div>
+      </div>
+    </nav>
+  </header>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end pr-4">
-            <a class="navbar-item is-flex is-align-items-center" href="index.html">
-              <i class="icon fas fa-home mr-2"></i> Página Principal
-            </a>
-
-            <a class="navbar-item is-flex is-align-items-center" href="servicios.html">
-              <i class="icon fas fa-building mr-2"></i> Servicios
-            </a>
-
-            <a class="navbar-item is-flex is-align-items-center" href="precios.html">
-              <i class="icon fas fa-file-invoice-dollar mr-2"></i> Precios
-            </a>
-
-            <a class="navbar-item is-flex is-align-items-center" href="contact.html">
-              <i class="icon fas fa-address-card mr-2"></i> Contacto
-            </a>
-
-            <a class="navbar-item is-flex is-align-items-center" href="why-web.html">
-              <i class="icon fas fa-users mr-2"></i> ¿Por qué una web?
-            </a>
-
-            <a class="navbar-item is-flex is-align-items-center" href="proyectos.html">
-              <i class="icon fas fa-folder-open mr-2"></i> Proyectos
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Hero header -->
-      <section id="hero-section" class="hero is-fullheight pt-4">
-        <div class="hero-body is-justify-content-center">
-          <div class="container columns is-centered is-desktop is-vcentered">
-            <div class="column has-text-centered">
-              <h1 class="title is-1 has-text-weight-bold mb-1"><span class="has-text-primary">Z</span>EN</h1>
-              <h2 class="subtitle is-3 has-text-weight-bold mb-1">
-                Desarrollo Web
-              </h2>
-              <p class="is-size-6">
-                Haz crecer tu negocio y destaca de la competencia con nosotros.
-              </p>
-              <div class="buttons is-justify-content-center mt-4">
-                <button class="button is-medium is-link is-outlined">Contacto</button>
-                <button class="button is-large is-primary has-text-weight-bold">Precios</button>
-              </div>
-            </div>
-            <div class="column">
-              <figure class="image is-square">
-                <img src="./images/header.svg" />
-              </figure>
+  <main>
+    <!-- Hero header -->
+    <section id="hero-section" class="hero is-fullheight pt-4">
+      <div class="hero-body is-justify-content-center">
+        <div class="container columns is-centered is-desktop is-vcentered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 has-text-weight-bold mb-1"><span class="has-text-primary">Z</span>EN</h1>
+            <h2 class="subtitle is-3 has-text-weight-bold mb-1">
+              Desarrollo Web
+            </h2>
+            <p class="is-size-6">
+              Haz crecer tu negocio y destaca de la competencia con nosotros.
+            </p>
+            <div class="buttons is-justify-content-center mt-4">
+              <button class="button is-medium is-link is-outlined">Contacto</button>
+              <button class="button is-large is-primary has-text-weight-bold">Precios</button>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Clients -->
-      <section id="clients" class="section is-clipped">
-        <div data-index="0" class="container my-2 py-6 client-container">
-          <div class="content has-text-centered">
-            <h3 class="title is-3 has-text-centered has-text-weight-bold mb-1">
-              Sabores de Laura
-            </h3>
-            <p class="is-size-5 m-0">
-              "Nuestra página web nos ha ayudado a tener una plataforma para
-              darnos a conocer más fácilmente. ¡Próximamente tendremos un blog!"
-            </p>
-            <p class="has-text-grey-light has-text-right"> Andrea Victoria @saboresdelaura</p>
-          </div>
-
-          <figure
-            class="client-showcase"
-            style="--image: url('../images/image2.webp')"
-          ></figure>
-        </div>
-
-        <div
-          data-index="1"
-          class="
-            container
-            my-2
-            py-6
-            client-container client-container--hidden client-container--absolute
-          "
-        >
-          <div class="content has-text-centered">
-            <h3 class="title is-3 has-text-centered has-text-weight-bold mb-1">
-              Sabores de Laura
-            </h3>
-            <p class="is-size-5 m-0">
-              "Nuestra página web nos ha ayudado a tener una plataforma para
-              darnos a conocer más fácilmente. ¡Próximamente tendremos un blog!"
-            </p>
-            <p class="has-text-grey-light has-text-right"> Andrea Victoria @saboresdelaura</p>
-          </div>
-
-          <figure
-            class="client-showcase"
-            style="--image: url('../images/project1.webp')"
-          ></figure>
-        </div>
-
-        <div
-          data-index="2"
-          class="
-            container
-            my-2
-            py-6
-            client-container client-container--hidden client-container--absolute
-          "
-        >
-          <div class="content has-text-centered">
-            <h3 class="title is-3 has-text-centered has-text-weight-bold mb-1">
-              Sabores de Laura
-            </h3>
-            <p class="is-size-5 m-0">
-              "Nuestra página web nos ha ayudado a tener una plataforma para
-              darnos a conocer más fácilmente. ¡Próximamente tendremos un blog!"
-            </p>
-            <p class="has-text-grey-light has-text-right"> Andrea Victoria @saboresdelaura</p>
-          </div>
-
-          <figure
-            class="client-showcase"
-            style="--image: url('../images/image4.webp')"
-          ></figure>
-        </div>
-      </section>
-
-      <!-- Testimonies -->
-      <section class="section is-flex is-flex-direction-column is-align-items-center has-background-primary">
-        <div class="container mb-4">
-          <h2 class="title is-4 has-text-weight-bold is-italic">Lo que dicen sobre ZEN</h2>
-        </div>
-
-        <div class="container mx-0 columns is-vcentered">
-          <div class="column is-one-third content">
-            <div class="box">
-              <p class="is-italic">
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Facere laudantium eligendi tempora velit veritatis quo saepe
-                cumque. Impedit iste, amet vel rem commodi quisquam, eius
-                consequuntur magni veniam sed officiis."
-              </p>
-              <div class="is-flex">
-                <span class="icon mr-2 pl-2">
-                  <i class="fas fa-crow"></i>
-                </span>
-                <p class="has-text-weight-semibold">- Albert, E.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-third content">
-            <div class="box">
-              <p class="is-italic">
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Facere laudantium eligendi tempora."
-              </p>
-              <div class="is-flex">
-                <span class="icon mr-2 pl-2">
-                  <i class="fas fa-user-ninja"></i>
-                </span>
-                <p class="has-text-weight-semibold">- Albert, E.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-third content">
-            <div class="box">
-              <p class="is-italic">
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Facere laudantium eligendi tempora velit veritatis quo saepe
-                cumque. Impedit iste, amet vel rem commodi quisquam, eius
-                consequuntur magni veniam sed officiis."
-              </p>
-              <div class="is-flex">
-                <span class="icon mr-2 pl-2">
-                  <i class="fas fa-dragon"></i>
-                </span>
-                <p class="has-text-weight-semibold">- Albert, E.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why a web? Section -->
-      <section class="section">
-        <div class="container has-text-centered">
-          <h2 class="title is-2 has-text-weight-bold">
-            ¿Por qué una página web?
-          </h2>
-          <p class="subtitle is-4">
-            Entre las diversas razones para tener una página web...
-          </p>
-        </div>
-
-        <div class="container columns is-vcentered py-6 is-justify-content-center">
-          <div class="column is-offset-1-desktop is-5">
-            <figure class="image is-3by2">
-              <img src="./images/online.svg" />
-            </figure>
-          </div>
-          <div class="column is-5">
-            <h3 class="title is-3 has-text-weight-bold">
-              Presencia Online 24/7
-            </h3>
-            <p class="is-size-5">
-              Tener una página de Instagram ya no es suficiente. Cada día
-              <strong>pierdes potenciales clientes</strong> en la web. Con una,
-              ganas una huella digital con toda tu información al alcance de
-              ellos.
-            </p>
-          </div>
-        </div>
-
-        <div class="container columns is-vcentered py-6 why-reversed is-justify-content-center">
-          <div class="column is-offset-1-desktop is-5">
-            <h3 class="title is-3 has-text-weight-bold">
-              Comunicación efectiva con tus clientes
-            </h3>
-            <p class="is-size-5">
-              Responder mensajes <strong>todo el día es agotador.</strong> Tu
-              página web encapsula toda la información necesaria para que tus
-              clientes concreten una compra contigo.
-            </p>
-          </div>
-          <div class="column is-5 why-reversed--image">
-            <figure class="image is-3by2">
-              <img src="./images/purchase.svg" />
+          <div class="column">
+            <figure class="image is-square">
+              <img src="./images/header.svg" />
             </figure>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="container columns is-vcentered py-6 is-justify-content-center">
-          <div class="column is-offset-1-desktop is-5">
-            <figure class="image is-3by2">
-              <img src="./images/trust.svg" />
-            </figure>
-          </div>
-          <div class="column is-5">
-            <h3 class="title is-3 has-text-weight-bold">
-              Genera confianza
-            </h3>
-            <p class="is-size-5">
-              Un negocio con página web da la impresión de que está seguro de su
-              producto y
-              <strong>apuesta a ser los mejores en su área.</strong> Tener una
-              página web es estar un paso adelante de la competencia.
-            </p>
-          </div>
-        </div>
-
-        <div class="container columns is-vcentered py-6 why-reversed is-justify-content-center">
-          <div class="column is-offset-1-desktop is-5">
-            <h3 class="title is-3 has-text-weight-bold">
-              Expansibles
-            </h3>
-            <p class="is-size-5">
-              Con el tiempo, <strong>tu negocio crece.</strong> Tus productos
-              mejores. También tus páginas webs. Puedes agregar cuantas páginas
-              necesites, un carrito para vender online o un blog.
-            </p>
-          </div>
-          <div class="column is-5 why-reversed--image">
-            <figure class="image is-3by2">
-              <img src="./images/dev.svg" />
-            </figure>
-          </div>
-        </div>
-
-        <div class="container has-text-centered">
-          <h3 class="title is-3 has-text-weight-bold mb-3">
-            ¿Convencido?
+    <!-- Clients -->
+    <section id="clients" class="section is-clipped">
+      <div data-index="0" class="container my-2 py-6 client-container">
+        <div class="content has-text-centered">
+          <h3 class="title is-3 has-text-centered has-text-weight-bold mb-1">
+            Sabores de Laura
           </h3>
-          <button class="button is-large is-primary">Obtener más información</button>
+          <p class="is-size-5 m-0">
+            "Nuestra página web nos ha ayudado a tener una plataforma para
+            darnos a conocer más fácilmente. ¡Próximamente tendremos un blog!"
+          </p>
+          <p class="has-text-grey-light has-text-right"> Andrea Victoria @saboresdelaura</p>
         </div>
-      </section>
 
-      <!-- Our services -->
-      <section class="section">
-        <div class="container content has-text-centered has-background-primary mt-6 p-4">
-          <h2 class="title is-2 has-text-weight-bold has-text-white">Nuestros servicios</h2>
-          <p class="subtitle is-4 has-text-white">
-            Ofrecemos servicios con el más alto estándar
+        <figure class="client-showcase" style="--image: url('../images/image2.webp')"></figure>
+      </div>
+
+      <div data-index="1" class="
+            container
+            my-2
+            py-6
+            client-container client-container--hidden client-container--absolute
+          ">
+        <div class="content has-text-centered">
+          <h3 class="title is-3 has-text-centered has-text-weight-bold mb-1">
+            Sabores de Laura
+          </h3>
+          <p class="is-size-5 m-0">
+            "Nuestra página web nos ha ayudado a tener una plataforma para
+            darnos a conocer más fácilmente. ¡Próximamente tendremos un blog!"
+          </p>
+          <p class="has-text-grey-light has-text-right"> Andrea Victoria @saboresdelaura</p>
+        </div>
+
+        <figure class="client-showcase" style="--image: url('../images/project1.webp')"></figure>
+      </div>
+
+      <div data-index="2" class="
+            container
+            my-2
+            py-6
+            client-container client-container--hidden client-container--absolute
+          ">
+        <div class="content has-text-centered">
+          <h3 class="title is-3 has-text-centered has-text-weight-bold mb-1">
+            Sabores de Laura
+          </h3>
+          <p class="is-size-5 m-0">
+            "Nuestra página web nos ha ayudado a tener una plataforma para
+            darnos a conocer más fácilmente. ¡Próximamente tendremos un blog!"
+          </p>
+          <p class="has-text-grey-light has-text-right"> Andrea Victoria @saboresdelaura</p>
+        </div>
+
+        <figure class="client-showcase" style="--image: url('../images/image4.webp')"></figure>
+      </div>
+    </section>
+
+    <!-- Testimonies -->
+    <section class="section is-flex is-flex-direction-column is-align-items-center has-background-primary">
+      <div class="container mb-4">
+        <h2 class="title is-2 has-text-weight-bold has-text-white">Lo que dicen sobre ZEN</h2>
+      </div>
+
+      <div class="container mx-0 columns is-vcentered">
+        <div class="column is-one-third content">
+          <div class="box">
+            <p class="is-italic">
+              "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Facere laudantium eligendi tempora velit veritatis quo saepe
+              cumque. Impedit iste, amet vel rem commodi quisquam, eius
+              consequuntur magni veniam sed officiis."
+            </p>
+            <div class="is-flex">
+              <span class="icon mr-2 pl-2">
+                <i class="fas fa-crow"></i>
+              </span>
+              <p class="has-text-weight-semibold">- Albert, E.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-one-third content">
+          <div class="box">
+            <p class="is-italic">
+              "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Facere laudantium eligendi tempora."
+            </p>
+            <div class="is-flex">
+              <span class="icon mr-2 pl-2">
+                <i class="fas fa-user-ninja"></i>
+              </span>
+              <p class="has-text-weight-semibold">- Albert, E.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-one-third content">
+          <div class="box">
+            <p class="is-italic">
+              "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Facere laudantium eligendi tempora velit veritatis quo saepe
+              cumque. Impedit iste, amet vel rem commodi quisquam, eius
+              consequuntur magni veniam sed officiis."
+            </p>
+            <div class="is-flex">
+              <span class="icon mr-2 pl-2">
+                <i class="fas fa-dragon"></i>
+              </span>
+              <p class="has-text-weight-semibold">- Albert, E.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why a web? Section -->
+    <section class="section">
+      <div class="container has-text-centered">
+        <h2 class="title is-2 has-text-weight-bold">
+          ¿Por qué una página web?
+        </h2>
+        <p class="subtitle is-4">
+          Entre las diversas razones para tener una página web...
+        </p>
+      </div>
+
+      <div class="container columns is-vcentered py-6 is-justify-content-center">
+        <div class="column is-offset-1-desktop is-5">
+          <figure class="image is-3by2">
+            <img src="./images/online.svg" />
+          </figure>
+        </div>
+        <div class="column is-5">
+          <h3 class="title is-3 has-text-weight-bold">
+            Presencia Online 24/7
+          </h3>
+          <p class="is-size-5">
+            Tener una página de Instagram ya no es suficiente. Cada día
+            <strong>pierdes potenciales clientes</strong> en la web. Con una,
+            ganas una huella digital con toda tu información al alcance de
+            ellos.
           </p>
         </div>
+      </div>
 
-        <div class="container columns py-6 is-justify-content-center">
-          <div class="column is-10">
-            <div class="card">
-              <div class="columns">
-                <div class="column is-4 pr-0 pt-0">
-                  <aside>
-                    <ul class="">
-                      <li
-                        data-content="web_dev"
-                        class="
+      <div class="container columns is-vcentered py-6 why-reversed is-justify-content-center">
+        <div class="column is-offset-1-desktop is-5">
+          <h3 class="title is-3 has-text-weight-bold">
+            Comunicación efectiva con tus clientes
+          </h3>
+          <p class="is-size-5">
+            Responder mensajes <strong>todo el día es agotador.</strong> Tu
+            página web encapsula toda la información necesaria para que tus
+            clientes concreten una compra contigo.
+          </p>
+        </div>
+        <div class="column is-5 why-reversed--image">
+          <figure class="image is-3by2">
+            <img src="./images/purchase.svg" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="container columns is-vcentered py-6 is-justify-content-center">
+        <div class="column is-offset-1-desktop is-5">
+          <figure class="image is-3by2">
+            <img src="./images/trust.svg" />
+          </figure>
+        </div>
+        <div class="column is-5">
+          <h3 class="title is-3 has-text-weight-bold">
+            Genera confianza
+          </h3>
+          <p class="is-size-5">
+            Un negocio con página web da la impresión de que está seguro de su
+            producto y
+            <strong>apuesta a ser los mejores en su área.</strong> Tener una
+            página web es estar un paso adelante de la competencia.
+          </p>
+        </div>
+      </div>
+
+      <div class="container columns is-vcentered py-6 why-reversed is-justify-content-center">
+        <div class="column is-offset-1-desktop is-5">
+          <h3 class="title is-3 has-text-weight-bold">
+            Expansibles
+          </h3>
+          <p class="is-size-5">
+            Con el tiempo, <strong>tu negocio crece.</strong> Tus productos
+            mejores. También tus páginas webs. Puedes agregar cuantas páginas
+            necesites, un carrito para vender online o un blog.
+          </p>
+        </div>
+        <div class="column is-5 why-reversed--image">
+          <figure class="image is-3by2">
+            <img src="./images/dev.svg" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="container has-text-centered">
+        <h3 class="title is-3 has-text-weight-bold mb-3">
+          ¿Convencido?
+        </h3>
+        <a href="servicios.html" class="button is-large is-primary">Obtener más información</a>
+      </div>
+    </section>
+
+    <!-- Our services -->
+    <section class="section">
+      <div class="container content has-text-centered has-background-primary mt-6 p-4">
+        <h2 class="title is-2 has-text-weight-bold has-text-white">Nuestros servicios</h2>
+        <p class="subtitle is-4 has-text-white">
+          Ofrecemos servicios con el más alto estándar
+        </p>
+      </div>
+
+      <div class="container columns py-6 is-justify-content-center">
+        <div class="column is-10">
+          <div class="card">
+            <div class="columns">
+              <div class="column is-4 pr-0 pt-0">
+                <aside>
+                  <ul class="">
+                    <li data-content="web_dev" class="
                           is-size-4
                           px-2
                           py-4
                           pr-0
                           service-button service-button--active
-                        "
-                      >
-                        <span class="icon mr-2 pl-2">
-                          <i class="fas fa-cubes"></i>
-                        </span>
-                        Desarrollo Web
-                      </li>
-                      <li
-                        data-content="ecommerce"
-                        class="is-size-4 px-2 py-4 pr-0 service-button"
-                      >
-                        <span class="icon mr-2 pl-2">
-                          <i class="fas fa-shopping-bag"></i>
-                        </span>
-                        eCommerce
-                      </li>
-                      <li
-                        data-content="blog"
-                        class="is-size-4 px-2 py-4 pr-0 service-button"
-                      >
-                        <span class="icon mr-2 pl-2">
-                          <i class="fas fa-user-edit"></i>
-                        </span>
-                        Blog profesional
-                      </li>
-                    </ul>
-                  </aside>
-                </div>
-                <div class="column px-4 pb-6 is-relative is-clipped is-flex">
-                  <div data-content="web_dev" class="service-content">
-                    <div class="content p-2">
-                      <h3 class="title is-3 has-text-weight-bold">
-                        Desarrollo Web
-                      </h3>
-                      <p>
-                        Obtén una página web clara y sencilla para dar a conocer tus productos de una manera más efectiva. 
-                      </p>
-                      <p>
-                        Nuestras páginas son 100% personalizables, con el contenido que desees y la representación que tu marca se merece. Garantizamos que tendrás una página <strong>completamente original y no se sentirá que estás en una plantilla</strong>  reutilizada millones de veces.
-                      </p>
-                      <p>
-                        Te respaldamos con ayuda técnica desde la primera publicación, así como la posibilidad de mejorar tu página agregando <strong>nuevas funciones en el futuro.</strong> 
-                      </p>
-                    </div>
-                    <button class="button is-primary is-medium mx-2">
-                      Precios
-                    </button>
+                        ">
+                      <span class="icon mr-2 pl-2">
+                        <i class="fas fa-cubes"></i>
+                      </span>
+                      Desarrollo Web
+                    </li>
+                    <li data-content="ecommerce" class="is-size-4 px-2 py-4 pr-0 service-button">
+                      <span class="icon mr-2 pl-2">
+                        <i class="fas fa-shopping-bag"></i>
+                      </span>
+                      eCommerce
+                    </li>
+                    <li data-content="blog" class="is-size-4 px-2 py-4 pr-0 service-button">
+                      <span class="icon mr-2 pl-2">
+                        <i class="fas fa-user-edit"></i>
+                      </span>
+                      Blog profesional
+                    </li>
+                  </ul>
+                </aside>
+              </div>
+              <div class="column px-4 pb-6 is-relative is-clipped is-flex">
+                <div data-content="web_dev" class="service-content">
+                  <div class="content p-2">
+                    <h3 class="title is-3 has-text-weight-bold">
+                      Desarrollo Web
+                    </h3>
+                    <p>
+                      Obtén una página web clara y sencilla para dar a conocer tus productos de una manera más efectiva.
+                    </p>
+                    <p>
+                      Nuestras páginas son 100% personalizables, con el contenido que desees y la representación que tu
+                      marca se merece. Garantizamos que tendrás una página <strong>completamente original y no se
+                        sentirá que estás en una plantilla</strong> reutilizada millones de veces.
+                    </p>
+                    <p>
+                      Te respaldamos con ayuda técnica desde la primera publicación, así como la posibilidad de mejorar
+                      tu página agregando <strong>nuevas funciones en el futuro.</strong>
+                    </p>
                   </div>
-                  <div
-                    data-content="ecommerce"
-                    class="service-content service-content--hidden"
-                  >
-                    <div class="content p-2">
-                      <h3 class="title is-3 has-text-weight-bold">eCommerce</h3>
-                      <p>
-                        Si tienes una tienda (física o desde tu hogar) y quieres expandir tus horizontes, entonces una eCommerce es tu solución. 
-                      </p>
-                      <p>
-                        Con nuestro servicio de eCommerce tendrás a acceso a una de las plataformas más robustas para las tiendas online en todo el mundo, WooCommerce. Puedes agregar tus productos, tener un inventario y permitir a tus clientes <strong>hacer sus compras en tu tienda online con mucha comodidad. </strong> 
-                      </p>
-                      <p>
-                        Varios métodos de pagos y una plataforma hermosa hace de esta la mejor inversión para <strong>expandir tus ventas</strong>  en la web. 
-                      </p>
-                    </div>
-                    <button class="button is-primary is-medium mx-2">
-                      Precios
-                    </button>
+                  <a href="precios.html" class="button is-primary is-medium mx-2">
+                    Precios
+                  </a>
+                </div>
+                <div data-content="ecommerce" class="service-content service-content--hidden">
+                  <div class="content p-2">
+                    <h3 class="title is-3 has-text-weight-bold">eCommerce</h3>
+                    <p>
+                      Si tienes una tienda (física o desde tu hogar) y quieres expandir tus horizontes, entonces una
+                      eCommerce es tu solución.
+                    </p>
+                    <p>
+                      Con nuestro servicio de eCommerce tendrás a acceso a una de las plataformas más robustas para las
+                      tiendas online en todo el mundo, WooCommerce. Puedes agregar tus productos, tener un inventario y
+                      permitir a tus clientes <strong>hacer sus compras en tu tienda online con mucha comodidad.
+                      </strong>
+                    </p>
+                    <p>
+                      Varios métodos de pagos y una plataforma hermosa hace de esta la mejor inversión para
+                      <strong>expandir tus ventas</strong> en la web.
+                    </p>
                   </div>
-                  <div
-                    data-content="blog"
-                    class="service-content service-content--hidden"
-                  >
-                    <div class="content p-2">
-                      <h3 class="title is-3 has-text-weight-bold">Blog</h3>
-                      <p>
-                        Sabías que, ¿un blog te permite compartir esa receta que te encanta o el viaje de tu sueños y ADEMAS <strong>ganar dinero en internet</strong> ? 
-                      </p>
-                      <p>
-                        Si creas contenido (digital o físico), escribes libros o simplemente te gusta compartir tu conocimiento un blog es la mejor herramienta para generar ingresos desde tu hogar. <strong>El tráfico online está allí para ser aprovechado</strong>  y ZEN te proporciona una plataforma para que mantengas a tu público enganchado.
-                      </p>
-                    </div>
-                    <button class="button is-primary is-medium mx-2">
-                      Precios
-                    </button>
+                  <a href="precios.html" class="button is-primary is-medium mx-2">
+                    Precios
+                  </a>
+                </div>
+                <div data-content="blog" class="service-content service-content--hidden">
+                  <div class="content p-2">
+                    <h3 class="title is-3 has-text-weight-bold">Blog</h3>
+                    <p>
+                      Sabías que, ¿un blog te permite compartir esa receta que te encanta o el viaje de tu sueños y
+                      ADEMAS <strong>ganar dinero en internet</strong> ?
+                    </p>
+                    <p>
+                      Si creas contenido (digital o físico), escribes libros o simplemente te gusta compartir tu
+                      conocimiento un blog es la mejor herramienta para generar ingresos desde tu hogar. <strong>El
+                        tráfico online está allí para ser aprovechado</strong> y ZEN te proporciona una plataforma para
+                      que mantengas a tu público enganchado.
+                    </p>
                   </div>
+                  <a href="precios.html" class="button is-primary is-medium mx-2">
+                    Precios
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Prices -->
-      <section class="section is-flex is-justify-content-center">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-one-third content">
-              <div class="box">
-                <h3>
-                  <span class="icon mr-2 pl-2">
-                    <i class="fas fa-shopping-bag"></i>
-                  </span>
-                  eCommerce
-                </h3>
-                <div class="has-text-centered">
-                  <p class="m-0 is-size-4 has-text-grey">Desde:</p>
-                  <p class="is-size-2 has-text-weight-bold" style="text-decoration: underline;">$500</p>
-                </div>
-                <ul class="has-text-grey">
-                  <li>Wordpress WooCommerce</li>
-                  <li>Tema premium 100% personalizado</li>
-                  <li>Procesamiento de pagos</li>
-                  <li>Google Analyics</li>
-                  <li>Panel de control</li>
-                </ul>
-                <div class="is-flex is-justify-content-end">
-                  <button class="button is-dark is-medium is-rounded">Saber más</button>
-                </div>
+    <!-- Prices -->
+    <section class="section is-flex is-justify-content-center">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-third content">
+            <div class="box">
+              <h3>
+                <span class="icon mr-2 pl-2">
+                  <i class="fas fa-shopping-bag"></i>
+                </span>
+                eCommerce
+              </h3>
+              <div class="has-text-centered">
+                <p class="m-0 is-size-4 has-text-grey">Desde:</p>
+                <p class="is-size-2 has-text-weight-bold" style="text-decoration: underline;">$580</p>
+              </div>
+              <ul class="has-text-grey">
+                <li>Shopify Premium</li>
+                <li>Tema premium 100% personalizado</li>
+                <li>Procesamiento de pagos</li>
+                <li>Información de envíos</li>
+                <li>Panel de control amigable</li>
+              </ul>
+              <div class="is-flex is-justify-content-end">
+                <a href="servicios.html" class="button is-dark is-medium is-rounded">Saber más</a>
               </div>
             </div>
-            <div class="column is-one-third content">
-              <div
-                class="box has-background-primary highlight-price"                
-              >
-                <h3 class="has-text-white">
-                  <span class="icon mr-2 pl-2">
-                    <i class="fas fa-cubes"></i>
-                  </span>
-                  Desarrollo Web
-                </h3>
-                <div class="has-text-centered">
-                  <p class="m-0 is-size-4 has-text-dark">Desde:</p>
-                  <p class="is-size-2 has-text-weight-bold has-text-white" style="text-decoration: underline;">
-                    $300
-                  </p>
-                </div>
-                <ul class="has-text-white-bis">
-                  <li>HTML/CSS/JS</li>
-                  <li>Página con diseño personalizado</li>
-                  <li>Página de contacto, ubicación en mapas, galería...</li>
-                  <li>Integración de servicios de correo electrónico</li>
-                  <li>Rápida y segura</li>
-                </ul>
-                <div class="is-flex is-justify-content-end">
-                  <button class="button is-dark is-medium is-rounded">
-                    Saber más
-                  </button>
-                </div>
+          </div>
+          <div class="column is-one-third content">
+            <div class="box has-background-primary highlight-price">
+              <h3 class="has-text-white">
+                <span class="icon mr-2 pl-2">
+                  <i class="fas fa-cubes"></i>
+                </span>
+                Desarrollo Web
+              </h3>
+              <div class="has-text-centered">
+                <p class="m-0 is-size-4 has-text-dark">Desde:</p>
+                <p class="is-size-2 has-text-weight-bold has-text-white" style="text-decoration: underline;">
+                  $330
+                </p>
+              </div>
+              <ul class="has-text-white-bis">
+                <li>HTML/CSS/JS</li>
+                <li>Página con diseño personalizado</li>
+                <li>Página de contacto, ubicación en mapas, galería...</li>
+                <li>Integración de servicios de correo electrónico</li>
+                <li>Rápida y segura</li>
+              </ul>
+              <div class="is-flex is-justify-content-end">
+                <a href="servicios.html" class="button is-dark is-medium is-rounded">
+                  Saber más
+                </a>
               </div>
             </div>
-            <div class="column is-one-third content">
-              <div class="box">
-                <h3 class="">
-                  <span class="icon mr-2 pl-2">
-                    <i class="fas fa-user-ninja"></i>
-                  </span>
-                  Blog
-                </h3>
-                <div class="has-text-centered">
-                  <p class="m-0 is-size-4 has-text-grey">Desde:</p>
-                  <p class="is-size-2 has-text-weight-bold" style="text-decoration: underline;">$400</p>
-                </div>
-                <ul class="has-text-grey">
-                  <li>Blog Wordpress</li>
-                  <li>Tema premium</li>
-                  <li>Blogs desde una cómoda interfáz</li>
-                  <li>Google Ads y Analyics</li>
-                  <li>Campañas de Email para tus seguidores</li>
-                </ul>
-                <div class="is-flex is-justify-content-end">
-                  <button class="button is-dark is-medium is-rounded">Saber más</button>
-                </div>
+          </div>
+          <div class="column is-one-third content">
+            <div class="box">
+              <h3 class="">
+                <span class="icon mr-2 pl-2">
+                  <i class="fas fa-user-ninja"></i>
+                </span>
+                Blog
+              </h3>
+              <div class="has-text-centered">
+                <p class="m-0 is-size-4 has-text-grey">Desde:</p>
+                <p class="is-size-2 has-text-weight-bold" style="text-decoration: underline;">$450</p>
+              </div>
+              <ul class="has-text-grey">
+                <li>Express + Contentful</li>
+                <li>Diseño web personalizado</li>
+                <li>Contenido desde una cómoda interfáz</li>
+                <li>Etiquetas y búsqueda</li>
+                <li>Google Ads y Analyics</li>
+              </ul>
+              <div class="is-flex is-justify-content-end">
+                <a href="servicios.html" class="button is-dark is-medium is-rounded">Saber más</a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Contact -->
-      <section class="section">
-        <div class="columns is-vcentered">
-          <div class="column content is-4 is-offset-1">
-            <figure class="image">
-              <img src="./images/message.svg" alt="" class="is-square" width="100%" height="250px">
-            </figure>
-            <h4 class="title is-4 has-text-weight-bold">
-              Unete a nuestro boletín
-            </h4>
-            <p class="subtitle is-6 has-text-grey-light">
-              Descubre ofertas exclusivas, noticias sobre el mundo web y
-              tecnológico y estrategías para tener una mejor página web
-            </p>
-            <form class="is-flex">
-              <label for="newsletter-email"></label>
-              <input
-                id="newsletter-email"
-                class="input"
-                type="email"
-                placeholder="Coloca tu correo aquí"
-              />
-              <button type="submit" class="button is-primary ml-2">Confirmar</button>
-            </form>
-          </div>
-          <div class="column content is-6">
-            <h4 class="title is-4 has-text-weight-bold">Contáctanos</h4>
-            <p class="subtitle is-6 has-text-grey-light">
-              Envianos tu mensaje con tus dudas o requerimientos. También puedes
-              pedir una cita para una video-llamada y hablarnos de tu proyecto!
-            </p>
-            <form class="box">
-              <div class="is-flex">
-                <div>
-                  <label for="name" class="has-text-weight-bold">Nombre</label>
-                  <input
-                    id="name"
-                    class="input"
-                    type="name"
-                    placeholder="Arya Stark"
-                  />
-                </div>
-                <div class=" ml-2">
-                  <label for="contact-email" class="has-text-weight-bold">Email</label>
-                  <input
-                    id="contact-email"
-                    class="input"
-                    type="email"
-                    placeholder="starkwolf@winterfall.com"
-                  />
-                </div>
-              </div>
-              <div class="my-2">
-                <label for="message" class="has-text-weight-bold">Mensaje</label>
-                <textarea name="message" id="message" cols="30" rows="10" class="textarea has-fixed-size" placeholder="Me gustaría hacer mi primera página web..."></textarea>
-              </div>
-              <div class="container is-flex is-justify-content-end mt-4">
-                <button type="submit" class="button is-primary ml-2">Enviar</button>
-              </div>             
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer has-background-black">
-      <div class="content columns">
-        <div class="column is-flex is-flex-direction-column">
-          <h4 class="mb-1 title is-4 has-text-weight-bold">ZEN</h4>
-          <a class="mb-2 has-text-grey-light"> Página Principal </a>
-          <a class="mb-2 has-text-grey-light"> Servicios </a>
-          <a class="mb-2 has-text-grey-light"> Precios </a>
-          <a class="mb-2 has-text-grey-light"> Contacto </a>
-          <a class="mb-2 has-text-grey-light"> Nosotros </a>
-          <a class="mb-2 has-text-grey-light"> Proyectos </a>
-        </div>
-        <div class="column is-flex is-flex-direction-column">
-          <h4 class="mb-1 title is-4 has-text-weight-bold">Servicios</h4>
-          <a class="mb-2 has-text-grey-light">
-            <i class="icon fas fa-cubes mr-2"></i> Desarrollo Web
-          </a>
-          <a class="mb-2 has-text-grey-light">
-            <i class="icon fas fa-shopping-bag mr-2"></i> eCommerce
-          </a>
-          <a class="mb-2 has-text-grey-light">
-            <i class="icon fas fa-user-ninja mr-2"></i> Blog Profesional
-          </a>
-        </div>
-        <div class="column">
-          <h4 class="mb-1 title is-4 has-text-weight-bold">Nosotros</h4>
-          <p class="has-text-grey-light"><strong>Horarios:</strong> 8:00am - 5pm (-4:00 GMT)</p>
-          <p class="has-text-grey-light">
-            <strong>Ubicación:</strong> Miranda, Venezuela
+    <!-- Contact -->
+    <section class="section">
+      <div class="columns is-vcentered">
+        <div class="column content is-4 is-offset-1">
+          <figure class="image">
+            <img src="./images/message.svg" alt="" class="is-square" width="100%" height="250px">
+          </figure>
+          <h4 class="title is-4 has-text-weight-bold">
+            Unete a nuestro boletín
+          </h4>
+          <p class="subtitle is-6 has-text-grey-light">
+            Descubre ofertas exclusivas, noticias sobre el mundo web y
+            tecnológico y estrategías para tener una mejor página web
           </p>
-          <p class="has-text-grey-light"><strong>Email:</strong> zenwebdev@gmail.com</p>
-          <p class="has-text-grey-light"><strong>Teléfono:</strong>+58 414-265-4031</p>
+          <form class="is-flex">
+            <label for="newsletter-email"></label>
+            <input id="newsletter-email" class="input" type="email" placeholder="Coloca tu correo aquí" />
+            <button type="submit" class="button is-primary ml-2">Confirmar</button>
+          </form>
         </div>
-        <div class="column is-flex is-flex-direction-column">
-          <h4 class="mb-1 title is-4 has-text-weight-bold">Redes Sociales</h4>
-          <a class="mb-2 has-text-grey-light" href="https://www.twitter.com">
-            <i class="icon fab fa-twitter"></i> Twitter
-          </a>
-          <a class="mb-2 has-text-grey-light" href="https://www.instagram.com">
-            <i class="icon fab fa-instagram"></i> Instagram
-          </a>
-          <a class="mb-2 has-text-grey-light" href="https://www.telegram.com">
-            <i class="icon fab fa-telegram"></i> Telegram
-          </a>
+        <div class="column content is-6">
+          <h4 class="title is-4 has-text-weight-bold">Contáctanos</h4>
+          <p class="subtitle is-6 has-text-grey-light">
+            Envianos tu mensaje con tus dudas o requerimientos. También puedes
+            pedir una cita para una video-llamada y hablarnos de tu proyecto!
+          </p>
+          <form class="box">
+            <div class="is-flex">
+              <div>
+                <label for="name" class="has-text-weight-bold">Nombre</label>
+                <input id="name" class="input" type="name" placeholder="Arya Stark" />
+              </div>
+              <div class=" ml-2">
+                <label for="contact-email" class="has-text-weight-bold">Email</label>
+                <input id="contact-email" class="input" type="email" placeholder="starkwolf@winterfall.com" />
+              </div>
+            </div>
+            <div class="my-2">
+              <label for="message" class="has-text-weight-bold">Mensaje</label>
+              <textarea name="message" id="message" cols="30" rows="10" class="textarea has-fixed-size"
+                placeholder="Me gustaría hacer mi primera página web..."></textarea>
+            </div>
+            <div class="container is-flex is-justify-content-end mt-4">
+              <button type="submit" class="button is-primary ml-2">Enviar</button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="container has-text-centered">
-        <p>Copyright ZEN_WEBDEV 2021 - Todos los derechos reservados</p>
-      </div>
-    </footer>
+    </section>
+  </main>
 
-    <script type="text/javascript" src="lib/main.js"></script>
-  </body>
+  <footer class="footer has-background-black">
+    <div class="content columns">
+      <div class="column is-flex is-flex-direction-column">
+        <h4 class="mb-1 title is-4 has-text-weight-bold">ZEN</h4>
+        <a class="mb-2 has-text-grey-light"> Página Principal </a>
+        <a class="mb-2 has-text-grey-light"> Servicios </a>
+        <a class="mb-2 has-text-grey-light"> Precios </a>
+        <a class="mb-2 has-text-grey-light"> Contacto </a>
+        <a class="mb-2 has-text-grey-light"> Nosotros </a>
+        <a class="mb-2 has-text-grey-light"> Proyectos </a>
+      </div>
+      <div class="column is-flex is-flex-direction-column">
+        <h4 class="mb-1 title is-4 has-text-weight-bold">Servicios</h4>
+        <a class="mb-2 has-text-grey-light">
+          <i class="icon fas fa-cubes mr-2"></i> Desarrollo Web
+        </a>
+        <a class="mb-2 has-text-grey-light">
+          <i class="icon fas fa-shopping-bag mr-2"></i> eCommerce
+        </a>
+        <a class="mb-2 has-text-grey-light">
+          <i class="icon fas fa-user-ninja mr-2"></i> Blog Profesional
+        </a>
+      </div>
+      <div class="column">
+        <h4 class="mb-1 title is-4 has-text-weight-bold">Nosotros</h4>
+        <p class="has-text-grey-light"><strong>Horarios:</strong> 8:00am - 5pm (-4:00 GMT)</p>
+        <p class="has-text-grey-light">
+          <strong>Ubicación:</strong> Miranda, Venezuela
+        </p>
+        <p class="has-text-grey-light"><strong>Email:</strong> zenwebdev@gmail.com</p>
+        <p class="has-text-grey-light"><strong>Teléfono:</strong>+58 414-265-4031</p>
+      </div>
+      <div class="column is-flex is-flex-direction-column">
+        <h4 class="mb-1 title is-4 has-text-weight-bold">Redes Sociales</h4>
+        <a class="mb-2 has-text-grey-light" href="https://www.twitter.com">
+          <i class="icon fab fa-twitter"></i> Twitter
+        </a>
+        <a class="mb-2 has-text-grey-light" href="https://www.instagram.com">
+          <i class="icon fab fa-instagram"></i> Instagram
+        </a>
+        <a class="mb-2 has-text-grey-light" href="https://www.telegram.com">
+          <i class="icon fab fa-telegram"></i> Telegram
+        </a>
+      </div>
+    </div>
+    <div class="container is-flex is-justify-content-center my-2">
+      <a href="https://es.siteground.com/go/9qqc0siv4c" target="_blank"><img border="0" src="https://uapi.siteground.com/img/affiliate/es_ES/USD/general_ES_USD_start-site-leaderboard-green.jpg"></a>
+    </div>
+    <div class="container has-text-centered">
+      <p>Copyright ZEN_WEBDEV 2021 - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="lib/main.js"></script>
+</body>
+
 </html>

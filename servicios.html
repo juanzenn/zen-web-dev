@@ -1,124 +1,267 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zen - Desarrollo Web Empresarial</title>
-    <script
-      src="https://kit.fontawesome.com/c8043db25f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <header>
-      <nav
-        class="navbar is-fixed-top"
-        role="navigation"
-        aria-label="main navigation"
-      >
-        <div class="navbar-brand">
-          <a class="navbar-item pl-4" href="index.html">
-            <div class="is-size-4 zen-logo"><span class="has-text-primary">Z</span>EN</div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>Zen - Servicios</title>
+  <script src="https://kit.fontawesome.com/c8043db25f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="index.html">
+          <div class="is-size-4 zen-logo"><span class="has-text-primary">Z</span>EN</div>
+        </a>
+
+        <!-- Hamburger button -->
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end pr-4">
+          <a class="navbar-item is-flex is-align-items-center" href="index.html">
+            <i class="icon fas fa-home mr-2"></i> Página Principal
           </a>
 
-          <!-- Hamburger button -->
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+          <a class="navbar-item is-flex is-align-items-center" href="servicios.html">
+            <i class="icon fas fa-building mr-2"></i> Servicios
+          </a>
+
+          <a class="navbar-item is-flex is-align-items-center" href="precios.html">
+            <i class="icon fas fa-file-invoice-dollar mr-2"></i> Precios
+          </a>
+
+          <a class="navbar-item is-flex is-align-items-center" href="contact.html">
+            <i class="icon fas fa-address-card mr-2"></i> Contacto
+          </a>
+
+          <a class="navbar-item is-flex is-align-items-center" href="why-web.html">
+            <i class="icon fas fa-question-circle mr-2"></i> ¿Por qué una web?
+          </a>
+
+          <a class="navbar-item is-flex is-align-items-center" href="proyectos.html">
+            <i class="icon fas fa-folder-open mr-2"></i> Proyectos
           </a>
         </div>
+      </div>
+    </nav>
+  </header>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end pr-4">
-            <a class="navbar-item is-flex is-align-items-center" href="index.html">
-              <i class="icon fas fa-home mr-2"></i> Página Principal
-            </a>
+  <main>
+    <section class="hero is-justify-content-center has-text-centered mt-6">
+      <div class="hero-body">
+        <h2 class="title is-1 has-text-weight-bold mb-0">Nuestros servicios</h2>
+        <p class="is-size-4 mb-0">No son solo páginas web, es una manera de hacer crecer tu negocio.</p>
+      </div>
+    </section>
 
-            <a class="navbar-item is-flex is-align-items-center" href="servicios.html">
-              <i class="icon fas fa-building mr-2"></i> Servicios
-            </a>
-
-            <a class="navbar-item is-flex is-align-items-center" href="precios.html">
-              <i class="icon fas fa-file-invoice-dollar mr-2"></i> Precios
-            </a>
-
-            <a class="navbar-item is-flex is-align-items-center" href="contact.html">
-              <i class="icon fas fa-address-card mr-2"></i> Contacto
-            </a>
-
-            <a class="navbar-item is-flex is-align-items-center" href="why-web.html">
-              <i class="icon fas fa-users mr-2"></i> ¿Por qué una web?
-            </a>
-
-            <a class="navbar-item is-flex is-align-items-center" href="proyectos.html">
-              <i class="icon fas fa-folder-open mr-2"></i> Proyectos
-            </a>
+    <!-- Cards -->
+    <section class="section">
+      <div class="container is-justify-content-center">
+        <div class="columns">
+          <div class="column is-flex is-flex-direction-column is-align-items-center has-text-centered">
+            <lord-icon src="https://cdn.lordicon.com//vaeagfzc.json" trigger="loop"
+              colors="primary:#121331,secondary:#f5853f" style="width:100px;height:100px">
+            </lord-icon>
+            <h4 class="title is-4 has-text-weight-bold has-text-grey mb-1 mt-2">Económico</h4>
+            <p class="is-size-5">Una página web es una inversión que dura toda la vida</p>
+          </div>
+          <div class="column is-flex is-flex-direction-column is-align-items-center has-text-centered">
+            <lord-icon src="https://cdn.lordicon.com//uukerzzv.json" trigger="loop"
+              colors="primary:#121331,secondary:#f5853f" style="width:100px;height:100px">
+            </lord-icon>
+            <h4 class="title is-4 has-text-weight-bold has-text-grey mb-1 mt-2">Competitividad</h4>
+            <p class="is-size-5">Una página web te hace ver más competitivo y profesional</p>
+          </div>
+          <div class="column is-flex is-flex-direction-column is-align-items-center has-text-centered">
+            <lord-icon src="https://cdn.lordicon.com//uqpazftn.json" trigger="loop"
+              colors="primary:#121331,secondary:#f5853f" style="width:100px;height:100px">
+            </lord-icon>
+            <h4 class="title is-4 has-text-weight-bold has-text-grey mb-1 mt-2">Atrae clientes</h4>
+            <p class="is-size-5">Nuevos clientes se ven atraídos a las empresas con páginas web</p>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main></main>
-
-    <footer class="footer has-background-black">
-      <div class="content columns">
-        <div class="column is-flex is-flex-direction-column">
-          <h4 class="mb-1 title is-4 has-text-weight-bold">ZEN</h4>
-          <a class="mb-2 has-text-grey-light"> Página Principal </a>
-          <a class="mb-2 has-text-grey-light"> Servicios </a>
-          <a class="mb-2 has-text-grey-light"> Precios </a>
-          <a class="mb-2 has-text-grey-light"> Contacto </a>
-          <a class="mb-2 has-text-grey-light"> Nosotros </a>
-          <a class="mb-2 has-text-grey-light"> Proyectos </a>
+    <section class="section">
+      <div class="container columns is-vcentered py-6 is-justify-content-center">
+        <div class="column is-offset-1 is-5">
+          <figure class="image is-3by2">
+            <img src="./images/html.svg" />
+          </figure>
+          <div class="content is-flex is-justify-content-center">
+            <a href="precios.html" class="button is-primary is-medium">Precios</a>
+          </div>          
         </div>
-        <div class="column is-flex is-flex-direction-column">
-          <h4 class="mb-1 title is-4 has-text-weight-bold">Servicios</h4>
-          <a class="mb-2 has-text-grey-light">
-            <i class="icon fas fa-cubes mr-2"></i> Desarrollo Web
-          </a>
-          <a class="mb-2 has-text-grey-light">
-            <i class="icon fas fa-shopping-bag mr-2"></i> eCommerce
-          </a>
-          <a class="mb-2 has-text-grey-light">
-            <i class="icon fas fa-user-ninja mr-2"></i> Blog Profesional
-          </a>
-        </div>
-        <div class="column">
-          <h4 class="mb-1 title is-4 has-text-weight-bold">Nosotros</h4>
-          <p class="has-text-grey-light"><strong>Horarios:</strong> 8:00am - 5pm (-4:00 GMT)</p>
-          <p class="has-text-grey-light">
-            <strong>Ubicación:</strong> Miranda, Venezuela
+        <div class="column is-5">
+          <h3 class="title is-2 has-text-weight-bold">
+            Desarrollo web
+          </h3>
+          <p class="is-size-5">
+            Página web con la información del producto/servicio de su empresa. Secciones para agregar valor como los testimonios, contacto o muestras de su producto. Páginas internas con información detallada, galerías, entre otras.
           </p>
-          <p class="has-text-grey-light"><strong>Email:</strong> zenwebdev@gmail.com</p>
-          <p class="has-text-grey-light"><strong>Teléfono:</strong>+58 414-265-4031</p>
-        </div>
-        <div class="column is-flex is-flex-direction-column">
-          <h4 class="mb-1 title is-4 has-text-weight-bold">Redes Sociales</h4>
-          <a class="mb-2 has-text-grey-light" href="https://www.twitter.com">
-            <i class="icon fab fa-twitter"></i> Twitter
-          </a>
-          <a class="mb-2 has-text-grey-light" href="https://www.instagram.com">
-            <i class="icon fab fa-instagram"></i> Instagram
-          </a>
-          <a class="mb-2 has-text-grey-light" href="https://www.telegram.com">
-            <i class="icon fab fa-telegram"></i> Telegram
-          </a>
+          <div class="columns mt-2">
+            <div class="column is-flex is-flex-direction-column is-align-items-center">
+              <lord-icon src="https://cdn.lordicon.com//buqfvmsj.json" trigger="loop"
+                colors="primary:#121331,secondary:#f5853f" style="width:80px;height:80px">
+              </lord-icon>
+              <p class="has-text-centered is-size-5 has-text-grey">Flexible y rápida, una página hecha con HTML/CSS/Javascript</p>
+            </div>
+            <div class="column is-flex is-flex-direction-column is-align-items-center">
+              <lord-icon src="https://cdn.lordicon.com//oswatybr.json" trigger="loop"
+                colors="primary:#121331,secondary:#f5853f" style="width:80px;height:80px">
+              </lord-icon>
+              <p class="has-text-centered is-size-5 has-text-grey">Hecha en base a la imágen de la empresa para un look único</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container has-text-centered">
-        <p>Copyright ZEN_WEBDEV 2021 - Todos los derechos reservados</p>
-      </div>
-    </footer>
 
-    <script type="text/javascript" src="lib/main.js"></script>
-  </body>
+      <div class="container columns is-vcentered py-6 why-reversed is-justify-content-center">
+        <div class="column is-offset-1 is-5">
+          <h3 class="title is-3 has-text-weight-bold">
+            eCommerce
+          </h3>
+          <p class="is-size-5">
+            Si tienes una tienda física (o aspiras tener una) un eCommerce es el mejor punto medio. Ofrece tus productos en internet, recibe pagos directos, obtén ventas a cualquier hora del día, completamente online.
+          </p>
+          <div class="columns mt-2">
+            <div class="column is-flex is-flex-direction-column is-align-items-center">
+              <lord-icon src="https://cdn.lordicon.com//nlzvfogq.json" trigger="loop"
+                colors="primary:#121331,secondary:#f5853f" style="width:80px;height:80px">
+              </lord-icon>
+              <p class="has-text-centered is-size-5 has-text-grey">Con Shopify, es fácil y rápido hacer inventario y llevar un registro de sus ventas</p>
+            </div>
+            <div class="column is-flex is-flex-direction-column is-align-items-center">
+              <lord-icon src="https://cdn.lordicon.com//qhviklyi.json" trigger="loop"
+                colors="primary:#121331,secondary:#f5853f" style="width:80px;height:80px">
+              </lord-icon>
+              <p class="has-text-centered is-size-5 has-text-grey">Genera más ventas y más ganancia cortando intermediarios para concretar una venta</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-5 why-reversed--image">
+          <figure class="image is-3by2">
+            <img src="./images/eshop.svg" />
+          </figure>
+          <div class="content is-flex is-justify-content-center">
+            <a href="precios.html" class="button is-primary is-medium">Precios</a>
+          </div>  
+        </div>
+      </div>
+
+      <div class="container columns is-vcentered py-6 is-justify-content-center">
+        <div class="column is-offset-1 is-5">
+          <figure class="image is-3by2">
+            <img src="./images/blogger.svg" />
+          </figure>
+          <div class="content is-flex is-justify-content-center">
+            <a href="precios.html" class="button is-primary is-medium">Precios</a>
+          </div>  
+        </div>
+        <div class="column is-5">
+          <h3 class="title is-3 has-text-weight-bold">
+            Blog
+          </h3>
+          <p class="is-size-5">
+            Ideal para los creadores de contenido. Un blog te permite hablar y compartir tu experiencia en la industria y destacar sobre tus competidores. También, escribir blogs es una forma de generar ingresos por internet.
+          </p>
+          <div class="columns mt-2">
+            <div class="column is-flex is-flex-direction-column is-align-items-center">
+              <lord-icon src="https://cdn.lordicon.com//tyounuzx.json" trigger="loop"
+                colors="primary:#121331,secondary:#f5853f" style="width:80px;height:80px">
+              </lord-icon>
+              <p class="has-text-centered is-size-5 has-text-grey">Expón tus productos y tu experiencia con artículos de calidad</p>
+            </div>
+            <div class="column is-flex is-flex-direction-column is-align-items-center">
+              <lord-icon src="https://cdn.lordicon.com//gqzfzudq.json" trigger="loop"
+                colors="primary:#121331,secondary:#f5853f" style="width:80px;height:80px">
+              </lord-icon>
+              <p class="has-text-centered is-size-5 has-text-grey">Obtén visitantes de todo el mundo y genera ingresos con ellos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-vcentered columns py-6 is-justify-content-center">
+        <div class="column is-offset-1 is-5 has-text-centered">
+         <h3 class="title is-3">¡Somos aliados SiteGround!</h3>
+         <p class="subtitle is-4">Si deseas el mejor servicio de Hosting para WordPress o tu página web, no dudes en pinchar al banner.</p>
+        </div>
+        <div class="column is-5 is-flex is-justify-content-center">
+          <a href="https://es.siteground.com/go/0vm045kg0k" target="_blank"><img border="0" src="https://uapi.siteground.com/img/affiliate/es_ES/NOPRICE/general_ES_start-site-medium-rectangle-green.jpg"></a>   
+        </div>
+      </div>
+    </section>    
+  </main>
+
+  <footer class="footer has-background-black">
+    <div class="content columns">
+      <div class="column is-flex is-flex-direction-column">
+        <h4 class="mb-1 title is-4 has-text-weight-bold">ZEN</h4>
+        <a class="mb-2 has-text-grey-light"> Página Principal </a>
+        <a class="mb-2 has-text-grey-light"> Servicios </a>
+        <a class="mb-2 has-text-grey-light"> Precios </a>
+        <a class="mb-2 has-text-grey-light"> Contacto </a>
+        <a class="mb-2 has-text-grey-light"> Nosotros </a>
+        <a class="mb-2 has-text-grey-light"> Proyectos </a>
+      </div>
+      <div class="column is-flex is-flex-direction-column">
+        <h4 class="mb-1 title is-4 has-text-weight-bold">Servicios</h4>
+        <a class="mb-2 has-text-grey-light">
+          <i class="icon fas fa-cubes mr-2"></i> Desarrollo Web
+        </a>
+        <a class="mb-2 has-text-grey-light">
+          <i class="icon fas fa-shopping-bag mr-2"></i> eCommerce
+        </a>
+        <a class="mb-2 has-text-grey-light">
+          <i class="icon fas fa-user-ninja mr-2"></i> Blog Profesional
+        </a>
+      </div>
+      <div class="column">
+        <h4 class="mb-1 title is-4 has-text-weight-bold">Nosotros</h4>
+        <p class="has-text-grey-light"><strong>Horarios:</strong> 8:00am - 5pm (-4:00 GMT)</p>
+        <p class="has-text-grey-light">
+          <strong>Ubicación:</strong> Miranda, Venezuela
+        </p>
+        <p class="has-text-grey-light"><strong>Email:</strong> zenwebdev@gmail.com</p>
+        <p class="has-text-grey-light"><strong>Teléfono:</strong>+58 414-265-4031</p>
+      </div>
+      <div class="column is-flex is-flex-direction-column">
+        <h4 class="mb-1 title is-4 has-text-weight-bold">Redes Sociales</h4>
+        <a class="mb-2 has-text-grey-light" href="https://www.twitter.com">
+          <i class="icon fab fa-twitter"></i> Twitter
+        </a>
+        <a class="mb-2 has-text-grey-light" href="https://www.instagram.com">
+          <i class="icon fab fa-instagram"></i> Instagram
+        </a>
+        <a class="mb-2 has-text-grey-light" href="https://www.telegram.com">
+          <i class="icon fab fa-telegram"></i> Telegram
+        </a>
+      </div>
+    </div>
+    <div class="container is-flex is-justify-content-center my-2">
+      <a href="https://es.siteground.com/go/9qqc0siv4c" target="_blank"><img border="0" src="https://uapi.siteground.com/img/affiliate/es_ES/USD/general_ES_USD_start-site-leaderboard-green.jpg"></a>
+    </div>
+    <div class="container has-text-centered">
+      <p>Copyright ZEN_WEBDEV 2021 - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="lib/main.js"></script>
+</body>
+
 </html>
